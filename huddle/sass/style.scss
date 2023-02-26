@@ -1,0 +1,17 @@
+@font-face {
+    font-family:Poppins-Medium ;
+    src:url('/resources/fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family:OpenSans-Medium ;
+    src:url('/resources/fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf');
+}
+
+
+
+@import 'config';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'responsive';
+

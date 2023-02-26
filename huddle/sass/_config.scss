@@ -1,0 +1,85 @@
+$pink-color: hsl(322, 100%, 66%);
+$pale-cyan:hsl(193, 100%, 96%);
+$dark-cyan:hsl(192, 100%, 9%);
+$gray-blue:hsl(208, 11%, 55%);
+$white-color:#fff;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{display: block;}
+button{border: none;}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:auto;
+
+    font-size: 18px;
+    font-family: OpenSans-Medium ;
+
+    //to remove scrollbar for edge, firefox
+    scrollbar-width: none;
+    //to remove scrollbar for firefox
+    overflow-y: scroll;
+}
+
+//to remove sidebar for chrome,safari
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header, main{
+    padding: 1rem 0.5rem;
+}
+
+header{
+    font-family: Poppins-Medium;
+    grid-column: 1/-1;
+}
+
+main{
+    grid-column: 1/-1;
+}
+
+footer{
+    grid-column: 1/-1;
+}
+
+.float-left{
+    float: left;
+}
+
+.btn{
+    height: 1.5rem;
+    padding: 0.1rem 1.7rem;
+    border-radius: 20px;
+    background-color: $white-color;
+    color: $gray-blue;
+    
+
+    &--bg-pink{
+        background-color: $pink-color;
+        color: $white-color;
+    }
+
+    &--large{
+        margin-top: 1rem;
+        padding: 0rem 3rem;
+        height: 2.5rem;
+    }
+
+    &--black-acent{
+        color: black;
+        border:1px solid $gray-blue;
+    }
+}
+
+@mixin media-desktop {
+    @media screen and (min-width:1024px){
+        @content
+    }
+}

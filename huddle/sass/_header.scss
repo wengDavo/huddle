@@ -1,0 +1,39 @@
+.header{
+    background-image: url('/resources/images/bg-hero-mobile.svg');
+    background-position:top ;
+    border-bottom: 1px solid lightblue;
+    
+    //navigation
+    &__nav{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    //header body
+    &__body{
+        font-weight: 200;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        text-align: center;
+
+        .col-1 + .col-2{
+            margin-top: 1.5rem;
+            margin-inline:auto;
+        }
+
+    }
+    
+    &__title{
+        width: 20ch;
+        margin: 1rem auto;
+    }
+
+    &__text{
+        width: 40ch;
+        margin-inline:auto ;
+    }
+
+}
+
