@@ -194,6 +194,9 @@ footer {
   border-radius: 10px;
   padding: 2px;
 }
+.footer__copyrights {
+  font-style: italic;
+}
 
 @media screen and (min-width: 1024px) {
   .header {
