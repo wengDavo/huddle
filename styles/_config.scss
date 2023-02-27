@@ -19,8 +19,8 @@ body{
     grid-template-rows:auto;
 
     font-size: 18px;
-    font-family: OpenSans-Medium ;
-
+    
+    font-family: 'Open Sans', sans-serif;
     //to remove scrollbar for edge, firefox
     scrollbar-width: none;
     //to remove scrollbar for firefox
@@ -32,12 +32,15 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+
+
 header, main{
     padding: 1rem 0.5rem;
 }
 
 header{
-    font-family: Poppins-Medium;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
     grid-column: 1/-1;
 }
 
@@ -48,6 +51,8 @@ main{
 footer{
     grid-column: 1/-1;
 }
+
+
 
 .float-left{
     float: left;
